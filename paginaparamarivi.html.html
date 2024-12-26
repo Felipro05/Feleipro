@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navidad Especial</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('https://images.unsplash.com/photo-1544207240-67ec6bc9026d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        .content {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        video {
+            display: block;
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: #ff4b5c;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff6f81;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Para la mejor novia del mundo</h1>
+        <p>Un pequeño recopilatorio de nuestro primer año juntos.</p>
+        <video controls autoplay>
+            <source src="Video de WhatsApp 2024-12-26 a las 19.09.08_a126856c.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <button onclick="restartVideo()">Reiniciar Video</button>
+    </div>
+
+    <script>
+        function restartVideo() {
+            const video = document.querySelector('video');
+            video.currentTime = 0;
+            video.play();
+        }
+    </script>
+</body>
+</html>
